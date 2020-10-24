@@ -34,7 +34,7 @@ function setup() {
 	packageBody = Bodies.circle(width/2 , 200 , 5 ,{restitution:1, isStatic:true});
 	World.add(world, packageBody);
 
-	l1Body=Bodies.rectangle(400,557,200,20);
+	l1Body=Bodies.rectangle(400,600,200,20);
 	World.add(world,l1Body);
 
 	l2Body=Bodies.rectangle(400,557,20,200);
