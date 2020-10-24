@@ -36,15 +36,16 @@ function setup() {
 
 	l1Body=Bodies.rectangle(400,648,200,20);
 	World.add(world,l1Body);
-	
+	l1.shapeColor="red";
 
 	l2Body=Bodies.rectangle(300,558,20,200);
-	World.add(world,l2Body);
+	World.add(world,l3Body);
+	l2.shapeColor="red";
 
 
 	l3Body=Bodies.rectangle(500,558,20,200);
 	World.add(world,l3Body);
-	
+	l3.shapeColor="red";
 
 	
 
@@ -55,7 +56,10 @@ function setup() {
 }
 function draw()
    {
-      background(0);
+	  background(0);
+	  rect(l1Body.position.x,l1Body.position.y,200,20);
+	  rect(l2Body.position.x,l2Body.position.y,20,200);
+	  rect(l3Body.position.x,l3Body.position.y,200,20);
       packageSprite.x= packageBody.position.x 
       packageSprite.y= packageBody.position.y 
       drawSprites();
@@ -64,7 +68,3 @@ function draw()
 		  Matter.Body.setStatic(packageBody,false,);  
         }
    }
-
-
-
-
