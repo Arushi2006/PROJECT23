@@ -37,7 +37,7 @@ function setup() {
 	l1Body=Bodies.rectangle(400,648,200,20);
 	World.add(world,l1Body);
 
-	l2Body=Bodies.rectangle(400,300,20,200);
+	l2Body=Bodies.rectangle(400,600,20,200);
 	World.add(world,l2Body);
 	
 	l3Body=Bodies.rectangle(500,558,200,20);
