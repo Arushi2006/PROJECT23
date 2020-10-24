@@ -36,19 +36,13 @@ function setup() {
 
 	l1Body=Bodies.rectangle(400,648,200,20);
 	World.add(world,l1Body);
-	l1.shapeColor="red";
 
 	l2Body=Bodies.rectangle(300,558,20,200);
 	World.add(world,l3Body);
-	l2.shapeColor="red";
-
-
+	
 	l3Body=Bodies.rectangle(500,558,20,200);
 	World.add(world,l3Body);
-	l3.shapeColor="red";
-
 	
-
 	//Create a Ground
 	ground = Bodies.rectangle(width/2,650,width, 10 , {isStatic:true});
  	World.add(world, ground);
